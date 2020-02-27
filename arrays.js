@@ -32,12 +32,18 @@ function accessElementInArray(array, index) {
   return(array[index])
 }
 
+<<<<<<< HEAD
 function destructivelyRemoveElementFromBeginningOfArray(array){
   array.shift()
+=======
+function destructivelyRemoveElementFromBeginningOfArray(array, element){
+  array.shift(element)
+>>>>>>> 31fe899e885854460b55dbf44c57449674b80cc3
   return array
 }
 
 function removeElementFromBeginningOfArray(array){
+<<<<<<< HEAD
   let slicedArray = array.slice(1)
   return slicedArray
 }
@@ -51,3 +57,8 @@ function removeElementFromEndOfArray(array){
   let endSlice = array.slice(0, array.length -1)
   return endSlice
 }
+=======
+  array.slice(1)
+  return array
+}
+>>>>>>> 31fe899e885854460b55dbf44c57449674b80cc3
